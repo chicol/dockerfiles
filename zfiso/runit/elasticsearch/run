@@ -1,0 +1,4 @@
+#!/bin/bash -e
+exec 2>&1
+cd /usr/local/elasticsearch-2.4.3
+exec chpst -u elasticsearch bin/elasticsearch 

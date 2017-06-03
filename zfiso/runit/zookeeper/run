@@ -1,0 +1,4 @@
+#!/bin/bash 
+exec 2>&1
+cd /usr/local/zookeeper-3.4.9/
+exec chpst -u root bin/zkServer.sh start-foreground

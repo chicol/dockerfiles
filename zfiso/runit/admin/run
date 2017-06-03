@@ -1,0 +1,4 @@
+#!/bin/bash -e
+exec 2>&1
+cd /usr/local/admin/
+exec chpst -u root ./admin 

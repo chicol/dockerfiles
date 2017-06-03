@@ -1,0 +1,4 @@
+#!/bin/bash
+exec 2>&1
+cd /usr/local/kafka_2.11-0.10.1.1/
+exec chpst -u root bin/kafka-server-start.sh  config/server.properties

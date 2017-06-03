@@ -1,0 +1,4 @@
+#!/bin/bash -e
+exec 2>&1
+cd /usr/local/isonode
+exec chpst -u root /usr/local/node-v6.2.2-linux-x64/bin/node app.js

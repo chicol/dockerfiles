@@ -1,0 +1,4 @@
+#!/bin/bash -e
+exec 2>&1
+cd /usr/local/isobpm/
+exec chpst -u root java -jar iso-bpm-0.0.1-SNAPSHOT.jar

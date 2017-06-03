@@ -1,0 +1,5 @@
+#!/bin/bash 
+exec 2>&1
+umask 077
+cd /usr/local/redis-3.2.5/
+exec chpst -u root src/redis-server redis.conf
